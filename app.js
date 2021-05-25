@@ -5,12 +5,12 @@ const color = document.querySelector('.color');
 btn.addEventListener('click', function(){
     let hexValue = '#';
     for(i = 0; i < 6; i++){
-        hexValue += hex[randomNumnber()];
+        hexValue += hex[randomNumber()];
     }
     document.body.style.backgroundColor = hexValue;
     color.textContent = hexValue;
 });
 
-function randomNumnber(){
+function randomNumber(){
     return Math.floor(Math.random() * hex.length)
 };
